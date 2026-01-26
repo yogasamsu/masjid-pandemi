@@ -7,6 +7,7 @@ import Finding2Section from '@/components/Finding2Section';
 import Finding3Section from '@/components/Finding3Section';
 import MemoriamSection from '@/components/MemoriamSection';
 import RecommendationSection from '@/components/RecommendationSection';
+import PartnersSection from '@/components/PartnersSection';
 import FooterSection from '@/components/FooterSection';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Finding3Section />
       <MemoriamSection />
       <RecommendationSection />
+      <PartnersSection />
       <FooterSection />
     </main>
   );

@@ -34,10 +34,10 @@ const HeroSection = () => {
                 >
                     <div className="h-14 md:h-20 w-auto relative">
                         <Image
-                            src="/assets/logo-pkebs-white.png"
+                            src="/assets/logo-pkebs-white-transparent.png"
                             alt="Pusat Kajian Ekonomika dan Bisnis Syariah"
-                            width={200}
-                            height={80}
+                            width={280}
+                            height={100}
                             className="h-full w-auto object-contain"
                         />
                     </div>
