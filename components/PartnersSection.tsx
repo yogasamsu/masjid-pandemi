@@ -21,9 +21,9 @@ const PartnersSection = () => {
                     </h2>
                     <div className="section-divider mb-12" />
 
-                    <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
                         {/* IAEI Logo */}
-                        <div className="flex flex-col items-center gap-3 group">
+                        <div className="flex flex-col items-center gap-3 group hover:scale-110 transition-transform duration-300 cursor-pointer">
                             <div className="relative w-32 h-32 md:w-40 md:h-40">
                                 <Image
                                     src="/assets/logo-iaei.png"
@@ -39,7 +39,7 @@ const PartnersSection = () => {
 
                         {/* ICMI Logo Placeholder (since file is missing/placeholder) */}
                         {/* If user provides logo-icmi.png, uncomment Image block below */}
-                        <div className="flex flex-col items-center gap-3 group">
+                        <div className="flex flex-col items-center gap-3 group hover:scale-110 transition-transform duration-300 cursor-pointer">
                             {/* 
                             <div className="relative w-32 h-32 md:w-40 md:h-40">
                                 <Image
