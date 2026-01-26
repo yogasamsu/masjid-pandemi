@@ -13,9 +13,13 @@ const PartnersSection = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-12">
+                    <p className="text-gold font-medium tracking-widest uppercase text-sm mb-4">
+                        Kolaborasi Riset
+                    </p>
+                    <h2 className="font-display text-3xl md:text-5xl font-bold text-navy mb-6">
                         Terima Kasih Kepada Semua Mitra
                     </h2>
+                    <div className="section-divider mb-12" />
 
                     <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
                         {/* IAEI Logo */}
