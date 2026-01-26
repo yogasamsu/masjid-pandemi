@@ -1,26 +1,388 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Kenangan Masjid - Design System
+   FEB UGM Brand Colors: Deep Navy Blue + Gold
+   Scrollytelling Editorial Style
+*/
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-gold: hsl(var(--gold));
+  --color-gold-light: hsl(var(--gold-light));
+  --color-gold-dark: hsl(var(--gold-dark));
+
+  --color-navy: hsl(var(--navy));
+  --color-navy-light: hsl(var(--navy-light));
+  --color-navy-dark: hsl(var(--navy-dark));
+
+  --color-cream: hsl(var(--cream));
+  --color-cream-dark: hsl(var(--cream-dark));
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Primary Colors - Navy Blue (FEB UGM) */
+    --background: 210 33% 99%;
+    --foreground: 220 45% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 45% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 45% 12%;
+
+    /* Deep Navy Blue - FEB UGM */
+    --primary: 218 70% 18%;
+    --primary-foreground: 45 100% 96%;
+
+    /* Gold/Amber Accent */
+    --accent: 40 95% 50%;
+    --accent-foreground: 220 45% 12%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 45% 12%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 15% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 218 70% 18%;
+
+    --radius: 0.5rem;
+
+    /* Custom Tokens */
+    --gold: 40 95% 50%;
+    --gold-light: 45 100% 70%;
+    --gold-dark: 38 90% 40%;
+
+    --navy: 218 70% 18%;
+    --navy-light: 218 50% 35%;
+    --navy-dark: 220 80% 10%;
+
+    --cream: 45 60% 97%;
+    --cream-dark: 40 30% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(218 70% 18% / 0.95), hsl(220 80% 10% / 0.85));
+    --gradient-gold: linear-gradient(135deg, hsl(40 95% 50%), hsl(45 100% 60%));
+    --gradient-navy: linear-gradient(135deg, hsl(218 70% 18%), hsl(218 50% 35%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(218 70% 18% / 0.1);
+    --shadow-elevated: 0 8px 30px -6px hsl(218 70% 18% / 0.15);
+    --shadow-gold: 0 4px 20px -4px hsl(40 95% 50% / 0.3);
+
+    /* Fonts */
+    --font-display-stack: var(--font-playfair), Georgia, serif;
+    --font-body-stack: var(--font-source-sans), system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 220 45% 6%;
+    --foreground: 45 60% 97%;
+
+    --card: 220 45% 8%;
+    --card-foreground: 45 60% 97%;
+
+    --popover: 220 45% 8%;
+    --popover-foreground: 45 60% 97%;
+
+    --primary: 40 95% 50%;
+    --primary-foreground: 220 45% 12%;
+
+    --accent: 218 70% 40%;
+    --accent-foreground: 45 60% 97%;
+
+    --secondary: 220 30% 15%;
+    --secondary-foreground: 45 60% 97%;
+
+    --muted: 220 30% 15%;
+    --muted-foreground: 210 15% 60%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 40 95% 50%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-body-stack);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display-stack);
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer components {
+
+  /* Hero Section Styles */
+  .hero-overlay {
+    background: var(--gradient-hero);
+  }
+
+  /* Stats Counter */
+  .stat-number {
+    font-family: var(--font-display-stack);
+    color: hsl(var(--gold));
+    font-weight: 700;
+    text-shadow: 0 2px 20px hsl(var(--gold) / 0.3);
+  }
+
+  /* Section Divider */
+  .section-divider {
+    width: 6rem;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9999px;
+    background: var(--gradient-gold);
+  }
+
+  /* Quote Block */
+  .quote-block {
+    position: relative;
+    padding-left: 2rem;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.625;
+  }
+
+  .quote-block::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: var(--font-display-stack);
+    font-size: 3.75rem;
+    color: hsl(var(--gold) / 0.3);
+    line-height: 1;
+  }
+
+  /* Card Styles */
+  .insight-card {
+    position: relative;
+    background-color: hsl(var(--card));
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    transition: all 500ms;
+  }
+
+  .insight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background: var(--gradient-gold);
+  }
+
+  .insight-card:hover {
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-0.25rem);
+  }
+
+  /* Floating Animation */
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Fade in up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Scroll Progress Bar */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0.25rem;
+    z-index: 50;
+    background: var(--gradient-gold);
+    transform-origin: left;
+  }
+
+  /* Number Counter */
+  .counter-value {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Chart Bars */
+  .chart-bar {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: all 1000ms ease-out;
+    background: var(--gradient-gold);
+  }
+
+  /* Timeline */
+  .timeline-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.125rem;
+    background: var(--gradient-navy);
+  }
+
+  /* Highlight Text */
+  .text-highlight {
+    position: relative;
+    display: inline-block;
+  }
+
+  .text-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    width: 100%;
+    height: 0.75rem;
+    z-index: -10;
+    opacity: 0.3;
+    background: hsl(var(--gold));
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display-stack);
+  }
+
+  .font-body {
+    font-family: var(--font-body-stack);
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .text-navy {
+    color: hsl(var(--navy));
+  }
+
+  .bg-navy {
+    background-color: hsl(var(--navy));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .bg-cream-dark {
+    background-color: hsl(var(--cream-dark));
+  }
+
+  .bg-navy-dark {
+    background-color: hsl(var(--navy-dark));
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Text Balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--gradient-gold);
+  }
 }
