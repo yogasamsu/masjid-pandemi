@@ -18,23 +18,23 @@ const FooterSection = () => {
                     className="text-center text-primary-foreground"
                 >
                     {/* Logos */}
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-6">
-                        <div className="h-14 md:h-16 w-auto relative">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-8">
+                        <div className="h-16 md:h-20 w-auto relative">
                             <Image
-                                src="/assets/logo-pkebs-white.png"
+                                src="/assets/logo-pkebs-white-transparent.png"
                                 alt="Pusat Kajian Ekonomika dan Bisnis Syariah"
-                                width={200}
-                                height={64}
+                                width={260}
+                                height={80}
                                 className="h-full w-auto object-contain"
                             />
                         </div>
-                        <div className="hidden md:block w-px h-10 bg-primary-foreground/30" />
-                        <div className="h-6 md:h-8 w-auto relative">
+                        <div className="hidden md:block w-px h-12 bg-primary-foreground/30" />
+                        <div className="h-8 md:h-10 w-auto relative">
                             <Image
                                 src="/assets/logo-sanggabiz.png"
                                 alt="Sanggabiz"
-                                width={100}
-                                height={32}
+                                width={120}
+                                height={40}
                                 className="h-full w-auto object-contain filter brightness-0 invert"
                             />
                         </div>

@@ -30,7 +30,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="mb-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10"
+                    className="mb-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-6"
                 >
                     <div className="h-14 md:h-20 w-auto relative">
                         <Image
