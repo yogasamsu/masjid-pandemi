@@ -112,8 +112,9 @@ Variabel berikut memiliki nilai **P-Value < 0.05**, yang berarti perbedaan antar
 | :--- | :--- | :--- | :--- |
 | **Fasilitas Ramah Difabel** | **< 0.001** | **49.4% Punya** | **23.8% Punya** |
 | Keberadaan TPA | 0.058* | 89.2% Ada | 79.5% Ada |
+| Pengajian Ibu-ibu | 0.060* | 85.0% Ada | 75.0% Ada |
 
-*Catatan: TPA memiliki signifikansi ambang batas (borderline).*
+*Catatan: TPA dan Pengajian Ibu-ibu memiliki signifikansi ambang batas (borderline), menunjukkan peran modal sosial komunitas.*
 
 ### Temuan Tidak Signifikan (Higenis/Normatif)
 Variabel berikut **TIDAK** membedakan kesiapan masjid secara signifikan (P > 0.05). Artinya, punya atau tidak punya hal ini tidak menjamin masjid jadi tangguh.
