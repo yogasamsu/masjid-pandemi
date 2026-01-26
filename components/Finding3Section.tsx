@@ -62,8 +62,7 @@ const Finding3Section = () => {
                             />
                         </p>
                         <p className="text-primary-foreground text-xl mt-4 max-w-md">
-                            Peluang lebih besar untuk menjadi <strong>Masjid Tangguh</strong>
-                            jika memiliki fasilitas ramah difabel
+                            Peluang lebih besar untuk menjadi <strong>Masjid Tangguh</strong> jika memiliki fasilitas ramah difabel
                         </p>
                         <p className="text-gold text-sm mt-4 font-medium">
                             P-Value &lt; 0.001 (Sangat Signifikan Secara Statistik)
