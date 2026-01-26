@@ -89,23 +89,33 @@ const Finding3Section = () => {
                             </h3>
                         </div>
 
-                        <div className="space-y-4">
-                            <div className="flex items-start gap-3">
+                        <div className="space-y-6">
+                            <div className="flex items-start gap-4">
                                 <Accessibility className="w-5 h-5 text-gold shrink-0 mt-1" />
                                 <div>
                                     <p className="font-medium text-navy">Fasilitas Ramah Difabel</p>
-                                    <p className="text-sm text-muted-foreground">
+                                    <p className="text-sm text-muted-foreground mt-1">
                                         Masjid Ideal: <strong className="text-gold">49.4%</strong> vs Lainnya: 23.8%
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-3">
+                            <div className="flex items-start gap-4">
                                 <Users className="w-5 h-5 text-gold shrink-0 mt-1" />
                                 <div>
                                     <p className="font-medium text-navy">Pengajian Ibu-ibu Aktif</p>
-                                    <p className="text-sm text-muted-foreground">
-                                        "Intelijen Sosial" yang lebih cair dan taktis di lapangan
+                                    <p className="text-sm text-muted-foreground mt-1">
+                                        <strong>Peluang 1.8x</strong> lebih tangguh. "Intelijen Sosial" yang lebih cair dan taktis di lapangan.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <Check className="w-5 h-5 text-gold shrink-0 mt-1" />
+                                <div>
+                                    <p className="font-medium text-navy">Keberadaan TPA</p>
+                                    <p className="text-sm text-muted-foreground mt-1">
+                                        Masjid Ideal: <strong className="text-gold">89.2%</strong> vs Lainnya: 79.5%
                                     </p>
                                 </div>
                             </div>
@@ -137,19 +147,23 @@ const Finding3Section = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-3">
+                            <div className="flex items-start gap-4">
                                 <Wallet className="w-5 h-5 shrink-0 mt-1" />
                                 <div>
                                     <p className="font-medium">Saldo Kas Besar</p>
-                                    <p className="text-sm">Masjid kaya tidak menjamin tanggap krisis</p>
+                                    <p className="text-sm mt-1">Masjid kaya tidak menjamin tanggap krisis</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-3">
-                                <Wallet className="w-5 h-5 shrink-0 mt-1" />
+                            <div className="flex items-start gap-4">
+                                <div className="w-5 h-5 shrink-0 mt-1 flex items-center justify-center">
+                                    <svg className="w-4 h-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <p className="font-medium">Good Governance Formal</p>
-                                    <p className="text-sm">98% punya dokumen, tapi tidak berdampak</p>
+                                    <p className="text-sm mt-1">98% punya dokumen, tapi tidak berdampak</p>
                                 </div>
                             </div>
                         </div>
