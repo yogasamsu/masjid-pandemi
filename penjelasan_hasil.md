@@ -141,6 +141,11 @@ Secara statistik, fasilitas fisik ini kemungkinan besar adalah **proxy (perwakil
 - Masjid yang mau repot-repot membangun ramp kursi roda atau toilet duduk biasanya memiliki pengurus yang sangat peduli pada jamaah yang paling lemah/rentan.
 - **"Otot Kepedulian"** inilah yang bekerja saat krisis (pandemi) datang. Takmir yang biasa peduli pada difabel, secara otomatis lebih sigap dan sensitif untuk membantu warga terdampak pandemi, membagikan sembako lebih tepat sasaran, dan mengorganisir bantuan kesehatan.
 
+### Peran Pengajian Ibu-ibu (Odds Ratio: 1.8x)
+Selain fasilitas difabel, **Pengajian Ibu-ibu** juga muncul sebagai faktor pendorong dengan signifikansi ambang batas (P=0.068).
+- Masjid yang memiliki pengajian ibu-ibu aktif memiliki **peluang 1.8 kali lebih besar** untuk menjadi tangguh.
+- Ini menunjukkan kekuatan **Modal Sosial (Social Capital)**. Jaringan ibu-ibu seringkali menjadi tulang punggung distribusi informasi dan logistik di level komunitas (akar rumput) yang lebih efektif daripada struktur formal bapak-bapak.
+
 ### Kesimpulan Besar: Mindset > Aset
 Analisis ini membantah hipotesis awal bahwa "Masjid Kaya = Masjid Siap".
 Data menunjukkan bahwa uang (Zakat/QRIS) dan administrasi (SK Takmir) hanyalah faktor pendukung. Faktor penentu utamanya adalah **karakter inklusif** pengelola masjid. Inklusivitas fisik adalah indikator paling kuat dari karakter tersebut.
