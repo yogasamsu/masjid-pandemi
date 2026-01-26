@@ -146,6 +146,11 @@ Selain fasilitas difabel, **Pengajian Ibu-ibu** juga muncul sebagai faktor pendo
 - Masjid yang memiliki pengajian ibu-ibu aktif memiliki **peluang 1.8 kali lebih besar** untuk menjadi tangguh.
 - Ini menunjukkan kekuatan **Modal Sosial (Social Capital)**. Jaringan ibu-ibu seringkali menjadi tulang punggung distribusi informasi dan logistik di level komunitas (akar rumput) yang lebih efektif daripada struktur formal bapak-bapak.
 
+### Peran Keberadaan TPA (Signifikan Secara Univariat)
+Keberadaan Taman Pendidikan Al-Qur'an (TPA) juga menjadi pembeda yang konsisten (P=0.058).
+- **89.2%** Masjid Ideal memiliki TPA aktif, dibandingkan **79.5%** pada masjid biasa.
+- TPA bukan sekadar tempat belajar anak, melainkan indikator bahwa masjid tersebut **"hidup"** setiap hari. Aktivitas rutin ini menciptakan **kohesi sosial** yang kuat antar-wali santri dan pengurus, yang menjadi modal penting saat mobilisasi bantuan pandemi.
+
 ### Kesimpulan Besar: Mindset > Aset
 Analisis ini membantah hipotesis awal bahwa "Masjid Kaya = Masjid Siap".
 Data menunjukkan bahwa uang (Zakat/QRIS) dan administrasi (SK Takmir) hanyalah faktor pendukung. Faktor penentu utamanya adalah **karakter inklusif** pengelola masjid. Inklusivitas fisik adalah indikator paling kuat dari karakter tersebut.
