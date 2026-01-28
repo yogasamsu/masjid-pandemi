@@ -39,7 +39,7 @@ const PartnersSection = () => {
 
                         {/* ICMI Logo */}
                         <div className="flex flex-col items-center gap-3 group hover:scale-110 transition-transform duration-300 cursor-pointer">
-                            <div className="relative w-32 h-32 md:w-40 md:h-40">
+                            <div className="relative w-48 h-32 md:w-60 md:h-40">
                                 <Image
                                     src="/assets/logo-icmi.png"
                                     alt="ICMI DIY"
