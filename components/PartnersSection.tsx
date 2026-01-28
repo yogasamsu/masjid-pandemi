@@ -37,10 +37,8 @@ const PartnersSection = () => {
                             </p>
                         </div>
 
-                        {/* ICMI Logo Placeholder (since file is missing/placeholder) */}
-                        {/* If user provides logo-icmi.png, uncomment Image block below */}
+                        {/* ICMI Logo */}
                         <div className="flex flex-col items-center gap-3 group hover:scale-110 transition-transform duration-300 cursor-pointer">
-                            {/* 
                             <div className="relative w-32 h-32 md:w-40 md:h-40">
                                 <Image
                                     src="/assets/logo-icmi.png"
@@ -48,11 +46,6 @@ const PartnersSection = () => {
                                     fill
                                     className="object-contain"
                                 />
-                            </div> 
-                            */}
-                            {/* Text Placeholder for now */}
-                            <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-gray-200 rounded-full text-navy font-bold text-xl border-2 border-dashed border-navy/30">
-                                ICMI
                             </div>
                             <p className="font-semibold text-sm text-navy/70 group-hover:text-navy transition-colors">
                                 ICMI DIY
